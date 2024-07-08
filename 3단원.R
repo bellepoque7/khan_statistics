@@ -1,3 +1,15 @@
+
+#단원 1 최빈값 출력
+
+get_freq <- function(list) {
+  my_table <- table(list)
+  my_max <- max(my_table)
+  my_mode <- as.numeric(names(my_table[my_table == my_max]))
+  return(my_mode)
+}
+
+
+
 #모집단의 표준편차
 get_av_var <- function(list) {
   my_mean <- sum(list) / length(list)
@@ -5,4 +17,3 @@ get_av_var <- function(list) {
   return(c(round(my_mean, 2), round(my_var, 2)))
 }
 
-# version
