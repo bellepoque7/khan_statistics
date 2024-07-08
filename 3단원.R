@@ -17,3 +17,9 @@ get_av_var <- function(list) {
   return(c(round(my_mean, 2), round(my_var, 2)))
 }
 
+#모집단의 분산
+get av_var <- function(list) {
+  my_mean <- sum(list) / length(list)
+  my_var <- sum((list - my_mean)^2) / length(list)
+  return(c(round(my_mean, 2), round(my_var, 2)))
+}

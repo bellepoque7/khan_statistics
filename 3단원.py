@@ -16,3 +16,13 @@ def get_mode(arr):
     medium = len(arr)//2
     return arr[medium]
 print(get_mode([6, 4, 1, 9, 3, 8, 3, 5, 10]))
+
+
+# # 표준편차구하기
+# def get_std(arr):    
+#     return np.std(arr)
+
+# # 분산구하기
+# def get_variance(arr):
+#     return np.var(arr)
+
